@@ -1,8 +1,4 @@
-/*
- *  <event><type>
- *  <type> m=map l=location p=picture w=website d=description
- *  <event> two chars describing the event ex ap=air port
- */
+import { events } from "./events";
 
 const icons = {
   l: "<icon-location></icon-location>",
@@ -11,28 +7,11 @@ const icons = {
   w: "<icon-link></icon-link>",
 };
 
-const events = {
-  rr: {
-    d: "rail road pass",
-    l: "https://goo.gl/maps/BDgX9e9Zc38S49Na6",
-  },
-  la: {
-    d: "Lava River Cave",
-    l: "https://goo.gl/maps/kMvpxGEtZCYrX4356",
-    p: "./lavaRiverCavePic.png",
-    m: "./lavaRiverCave.png",
-    w: "https://www.flagstaff.com/lava-tubes",
-  },
-  wi: {
-    d: "wilson",
-    l: "https://goo.gl/maps/Bov8ZrUxddbEgepH6",
-  },
-};
-
 const linkBuilder = () => {
   const allLinks = Object.keys(events).reduce((a, k) => {
     const event = events[k];
     const subLink2 = Object.keys(event).reduce((b, j) => {
+      if (j.length > 1) return b;
       return { ...b, [`${k}${j}`]: events[k][j] };
     }, {});
     return { ...a, ...subLink2 };
