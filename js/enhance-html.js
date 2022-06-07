@@ -1,4 +1,4 @@
-import { events } from "./events";
+import { events } from "./data/events";
 
 const icons = {
   l: "<icon-location></icon-location>",

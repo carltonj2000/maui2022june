@@ -18,10 +18,19 @@
   <body>
     <sw-modal></sw-modal>
     <div class="container">
-      <h1>Maui Trip</h1>
-      <p>June 2022</p>
-      <agenda-june8></agenda-june8>
+      <div class="header">
+        <div class="title">
+          <h1>Maui</h1>
+          <p style="opacity: 0.7">June 2022</p>
+        </div>
+        <div class="nav">
+          <button id="agendaButton">Agenda</button>
+          <button id="eventsButton">Events</button>
+        </div>
+      </div>
+      <agenda-maui></agenda-maui>
+      <events-maui></events-maui>
     </div>
-    <script src="./app.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
   </body>
 </html>

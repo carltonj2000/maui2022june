@@ -1,4 +1,4 @@
-import { table } from "./agenda-table.js";
+import { table } from "../components/agenda-table.js";
 
 const agenda = [
   ["Start", "End", "Details"],

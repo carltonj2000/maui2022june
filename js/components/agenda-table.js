@@ -1,15 +1,11 @@
-import { enhance } from "./enhance-html.js";
-
-const agendaType = [
-  ["startTime", "endTime", "eventDetails", "location", "trail map", "pictures"],
-];
+import { enhance } from "../enhance-html.js";
 
 export const table = (agenda, title = "Title Needed") => {
   const head = agenda.slice(0, 1);
   const body = agenda.slice(1);
   const html = /* html */ `
       <div class="gc-agenda">
-        <h2>${title}</h2>
+        <h3>${title}</h3>
         <table>
           <thead>
             ${head

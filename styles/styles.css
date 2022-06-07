@@ -5,13 +5,13 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 0 1rem;
   background-color: rgb(243, 244, 246);
   color: rgb(55, 65, 81);
 }
 
 table {
   border-collapse: collapse;
+  margin: 0 1rem;
 }
 
 thead th {
@@ -33,11 +33,17 @@ th {
 
 h1,
 h2,
+h3,
 p {
   color: rgb(79, 70, 229);
 }
 
 h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
   text-align: center;
   margin-bottom: 0.5rem;
 }
@@ -49,6 +55,69 @@ h2 {
   top: 0.3rem;
 }
 
-.gc-agenda {
+.agenda {
   margin-top: 1.5rem;
+  flex-direction: column;
+}
+
+.events {
+  margin-top: 1.5rem;
+  flex-direction: column;
+}
+
+.faded {
+  opacity: 0.5;
+}
+
+.normal {
+  opacity: 0.5;
+}
+
+.header {
+  background: rgb(60, 50, 229);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  position: relative;
+}
+
+.header * {
+  color: rgb(243, 244, 246);
+}
+
+.header button {
+  color: rgb(243, 244, 246);
+  background: rgb(100, 100, 255);
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10%;
+}
+
+#eventsButton {
+  opacity: 0.5;
+}
+.header .title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.header .nav {
+  display: flex;
+  z-index: 1;
+  gap: 1rem;
+}
+
+.events .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    margin: 0;
+  }
 }
