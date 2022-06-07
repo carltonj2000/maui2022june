@@ -1,5 +1,6 @@
 import "./agenda-day.js";
 import june8 from "../data/june8.js";
+import june15 from "../data/june15.js";
 
 class AgendaMaui extends HTMLElement {
   constructor() {
@@ -7,7 +8,8 @@ class AgendaMaui extends HTMLElement {
     this.innerHTML = /* html */ `
     <div class="agenda" id="agenda">
       <h2>Agenda</h2>
-      <agenda-day id="june8"></agenda-june8>
+      <agenda-day id="june8"></agenda-day>
+      <agenda-day id="june15"></agenda-day>
     </div>
     `;
   }
@@ -16,3 +18,4 @@ class AgendaMaui extends HTMLElement {
 customElements.define("agenda-maui", AgendaMaui);
 
 document.getElementById("june8").info = june8;
+document.getElementById("june15").info = june15;

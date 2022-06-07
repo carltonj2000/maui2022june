@@ -6,21 +6,6 @@
  */
 
 export const events = {
-  rr: {
-    d: "rail road pass",
-    l: "https://goo.gl/maps/BDgX9e9Zc38S49Na6",
-  },
-  la: {
-    d: "Lava River Cave",
-    l: "https://goo.gl/maps/kMvpxGEtZCYrX4356",
-    p: "./lavaRiverCavePic.png",
-    m: "./lavaRiverCave.png",
-    w: "https://www.flagstaff.com/lava-tubes",
-  },
-  wi: {
-    d: "wilson",
-    l: "https://goo.gl/maps/Bov8ZrUxddbEgepH6",
-  },
   mc: {
     d: "Molokini Crater",
     activity: "Snorkeling",
@@ -180,5 +165,18 @@ export const events = {
     activity: "Fly",
     coordinates: ["20.894838558696968", "-156.43592419656764"],
     l: "https://goo.gl/maps/Lmu4SY3eJkoqaLky9",
+  },
+  sh: {
+    d: "Maui Seaside Hotel",
+    activity: "Sleep",
+    coordinates: ["20.891779868461168", "-156.47042378026177"],
+    l: "https://goo.gl/maps/BEUuHamhka8LC7PY7",
+    w: "https://www.mauiseasidehotel.com/",
+  },
+  ca: {
+    d: "Budget Rental Car",
+    activity: "Drive",
+    coordinates: ["20.89257696982907", "-156.44050165027625"],
+    l: "https://goo.gl/maps/si8JaVVJ4ftkKMBN6",
   },
 };
