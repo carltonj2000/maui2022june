@@ -92,7 +92,14 @@ export const events = {
     w: "https://www.toasttab.com/alchemy-maui-bistro/v3/",
   },
   fs: {
-    d: "Fork & Salad",
+    d: "Fork & Salad South",
+    activity: "Eats GOOD",
+    coordinates: ["20.87858088903892", "-156.45598129563388"],
+    l: "https://goo.gl/maps/5hjJLfHjoj8Xc286A",
+    w: "https://forkandsaladmaui.com/",
+  },
+  fo: {
+    d: "Fork & Salad North",
     activity: "Eats GOOD",
     coordinates: ["20.87858088903892", "-156.45598129563388"],
     l: "https://goo.gl/maps/5hjJLfHjoj8Xc286A",
@@ -153,6 +160,7 @@ export const events = {
     activity: ["blowholes", "sea arches", "rsvr days b4"],
     coordinates: ["20.788768639472828", "-156.00362512462877"],
     l: "https://goo.gl/maps/U3xsZbFiVeB6FqPo8",
+    m: "StateParkVoucher.pdf",
   },
   bh: {
     d: "Nakalele Blowhole",
@@ -165,6 +173,7 @@ export const events = {
     activity: "Fly",
     coordinates: ["20.894838558696968", "-156.43592419656764"],
     l: "https://goo.gl/maps/Lmu4SY3eJkoqaLky9",
+    m: "HawaiianAirlines.pdf",
   },
   sh: {
     d: "Maui Seaside Hotel",
@@ -172,11 +181,13 @@ export const events = {
     coordinates: ["20.891779868461168", "-156.47042378026177"],
     l: "https://goo.gl/maps/BEUuHamhka8LC7PY7",
     w: "https://www.mauiseasidehotel.com/",
+    m: "MauiSeasideHotel.pdf",
   },
   ca: {
     d: "Budget Rental Car",
     activity: "Drive",
     coordinates: ["20.89257696982907", "-156.44050165027625"],
     l: "https://goo.gl/maps/si8JaVVJ4ftkKMBN6",
+    m: "CarRentalVoucher.pdf",
   },
 };
