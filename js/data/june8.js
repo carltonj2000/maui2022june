@@ -13,12 +13,13 @@ const agenda = [
   [
     "11:00 AM",
     "11:30 AM",
-    "Luggage Drop off at Maui Seaside Hotel Conf# 72314975549883 <shl /> <shw /> <shm />",
+    "Luggage Drop off at <shd /><br /> Conf# 72314975549883 <shl /> <shw /> <shm />",
   ],
+  ["11:30 AM", "12:00 AM", "Kalepolepo Park "],
   ["11:30 AM", "12:30 AM", "Lunch at <fsd /> <fsl />"],
-  ["12:30 PM", "2:30 PM", "Drive To <brd /> <brl />"],
-  ["11:00 AM", "12:00 AM", "Drive To <brd /> <brl />"],
-  ["11:30 AM", "12:30 AM", "Dinner at <fsd /> <fsl />"],
+  ["12:30 PM", "1:30 PM", "Drive To <brd /> <brl />"],
+  ["1:30 PM", "7:30 PM", "Kaanapali snorkel and dinner<brd /> <brl />"],
+  ["7:30 PM", "8:30 PM", "Drive to <shd />."],
 ];
 
 export default { title: "8th Flying In", agenda };

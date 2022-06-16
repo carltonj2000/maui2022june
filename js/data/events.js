@@ -24,6 +24,15 @@ export const events = {
     coordinates: ["20.598362345106178", "-156.42047004685332"],
     l: "https://goo.gl/maps/WRhQVfnrksBDYuar7",
   },
+  pb: {
+    d: "Pa'ako Beach",
+  },
+  lt: {
+    d: "Lava Tube",
+  },
+  hs: {
+    d: "Hanawi Stream",
+  },
   cg: {
     d: "Coral Gardens",
     activity: ["Snorkeling", "Turtles", "Steep Cliffs"],
@@ -140,8 +149,8 @@ export const events = {
   af: {
     d: "Alelele Falls",
     activity: ["Falls", "Swim"],
-    coordinates: ["20.645265337584515", "-156.0870432202401"],
-    l: "https://goo.gl/maps/r3tyvNshLVwigeea6",
+    coordinates: ["20.685415433651503", "-156.09205188574475"],
+    l: "https://goo.gl/maps/Z3mzFodx85nRJFjm6",
   },
   wf: {
     d: "Waikani Falls",
@@ -156,11 +165,14 @@ export const events = {
     l: "https://goo.gl/maps/y1gFajj7YPaYhUWaA",
   },
   bs: {
-    d: "Black Sand Beach*",
+    d: "Black Sand Beach",
     activity: ["blowholes", "sea arches", "rsvr days b4"],
     coordinates: ["20.788768639472828", "-156.00362512462877"],
     l: "https://goo.gl/maps/U3xsZbFiVeB6FqPo8",
     m: "StateParkVoucher.pdf",
+  },
+  rs: {
+    d: "Red Sand Beach",
   },
   bh: {
     d: "Nakalele Blowhole",
@@ -189,5 +201,9 @@ export const events = {
     coordinates: ["20.89257696982907", "-156.44050165027625"],
     l: "https://goo.gl/maps/si8JaVVJ4ftkKMBN6",
     m: "CarRentalVoucher.pdf",
+  },
+  wb: {
+    d: "Wailea Beach",
+    activity: "Snorkeling",
   },
 };
