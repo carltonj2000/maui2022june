@@ -5,4 +5,4 @@ const agenda = [
   ["6:30 PM", "8:30 AM", "Grand Wailea"],
 ];
 
-export default { title: "13th Black Sand Beach", agenda };
+export default { title: "14th Black Sand Beach", agenda };

@@ -2,8 +2,8 @@ class iconMap extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = /* xml */ `<svg
-  width="24"
-  height="24"
+  width="20"
+  height="20"
   stroke-width="1.5"
   viewBox="0 0 24 24"
   fill="none"

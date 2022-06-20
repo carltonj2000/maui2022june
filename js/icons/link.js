@@ -7,8 +7,8 @@ class iconLink extends HTMLElement {
   aria-hidden="true"
   role="img"
   class="iconify iconify--ph"
-  width="24"
-  height="24"
+  width="20"
+  height="20"
   preserveAspectRatio="xMidYMid meet"
   viewBox="0 0 256 256"
 >

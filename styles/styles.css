@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
 .container {
   max-width: fit-content;
   min-height: 100vh;
@@ -28,7 +36,7 @@ tr:nth-child(odd) {
 
 td,
 th {
-  padding: 0.2rem 0.5rem 0.4rem;
+  padding: 0.5rem;
 }
 
 h1,
@@ -46,13 +54,6 @@ h2 {
 h3 {
   text-align: center;
   margin-bottom: 0.5rem;
-}
-
-.icon {
-  display: inline-block;
-  position: relative;
-  margin: 0 3px 0 0;
-  top: 0.3rem;
 }
 
 .agenda {
@@ -83,7 +84,8 @@ h3 {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .header * {
@@ -109,7 +111,6 @@ h3 {
 
 .header .nav {
   display: flex;
-  z-index: 1;
   gap: 1rem;
 }
 

@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "build:dev": "vite build",
     "build": "vite build --base=/maui2022/",
     "preview": "vite preview",
     "rsync": "rsync -avz ./dist/ carltonjoseph.com:/home/carltonj2000/do20041/sites/teresa2x3/web/maui2022/"

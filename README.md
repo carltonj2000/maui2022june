@@ -40,3 +40,9 @@ sudo apt install graphicsmagick
     }
   ]
 ```
+
+## Code History
+
+Code is base on:
+
+- [Dropdown - Web Component Essentials](https://youtu.be/mcSnBFT52aE)

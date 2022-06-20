@@ -3,7 +3,7 @@ const agenda = [
   [
     "7:00 AM",
     "10:05 AM",
-    "Fly from Vegas (LAS) to Maui (OGG) <apl /> Hawaiian AAGAOV <apm />",
+    `Fly from Vegas (LAS) to Maui (OGG) <apl /> Hawaiian AAGAOV <apm />`,
   ],
   [
     "10:05 AM",
