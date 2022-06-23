@@ -1,3 +1,6 @@
+import { names } from "../data/days";
+
+console.log({ names });
 class Dropdown extends HTMLElement {
   constructor() {
     super();
@@ -7,19 +10,25 @@ class Dropdown extends HTMLElement {
   render() {
     this.innerHTML = /* html */ `<div class="days">
       <button id="daysB">Days &#x25BC;</button>
-      <div id="navItems">
-        <a href="#">Top</a>
-        <a href="#june08">June08</a>
-        <a href="#june09">June09</a>
-      </div>
+      <dialog>
+        <div id="navItems">
+          <a href="#">Top</a>
+          ${names.map((n) => `<a href="#${n}">${n}</a>`).join("")}
+        </div>
+      </dialog>
     </div>`;
+    const dialog = document.querySelector("dialog");
     const daysB = document.querySelector("#daysB");
     const navItems = document.querySelector("#navItems");
     daysB.addEventListener("click", () => {
-      navItems.style.display =
-        navItems.style.display === "none" ? "flex" : "none";
-      const detail = navItems.style.display === "none" ? "hidden" : "shown";
+      dialog.showModal();
     });
+    const daysL = [...document.querySelectorAll("#navItems > a")];
+    daysL.forEach((d) =>
+      d.addEventListener("click", () => {
+        dialog.close();
+      })
+    );
   }
 }
 

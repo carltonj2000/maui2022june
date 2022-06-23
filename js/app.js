@@ -54,3 +54,9 @@ agendaB.click();
 ["agenda", "events", "todo"].map((p) => {
   // const
 });
+
+const navigationHeight = document.querySelector(".header").offsetHeight;
+document.documentElement.style.setProperty(
+  "--scroll-padding",
+  navigationHeight + "px"
+);
