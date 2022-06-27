@@ -1,6 +1,5 @@
 import { names } from "../data/days";
 
-console.log({ names });
 class Dropdown extends HTMLElement {
   constructor() {
     super();

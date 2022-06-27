@@ -13,38 +13,27 @@ document.documentElement.style.setProperty(
   navigationHeight + "px"
 );
 
-const events = document.getElementById("events");
-const eventsB = document.getElementById("eventsB");
-
-const days = document.getElementById("days");
-const daysB = document.getElementById("daysB");
-
-eventsB.addEventListener("click", () => {
-  events.style.display = "flex";
-  eventsB.style.opacity = "1";
-
-  days.style.display = "none";
-  daysB.style.opacity = "0.5";
-});
-
-daysB.addEventListener("click", () => {
-  events.style.display = "none";
-  eventsB.style.opacity = "0.5";
-
-  days.style.display = "flex";
-  daysB.style.opacity = "1";
-});
-
-// todo: below refactor the hard coded values above
 const tabOpts = ["days", "events"];
 
-tabGrpNBtn = tabOpts.map((t) => {
+const tabGrpNBtn = tabOpts.map((t) => {
   const grp = document.getElementById(t);
   const btn = document.getElementById(`${t}B`);
   return { grp, btn };
 });
 
 // add click handler to enable only one tab
-tabOpts.map((t) => {
-  //
+tabOpts.map((_, i) => {
+  const { grp, btn } = tabGrpNBtn[i];
+  btn.addEventListener("click", () => {
+    tabOpts.map((_, j) => {
+      const { grp: grp2, btn: btn2 } = tabGrpNBtn[j];
+      if (i === j) {
+        grp2.style.display = "flex";
+        btn2.style.opacity = "1";
+      } else {
+        grp2.style.display = "none";
+        btn2.style.opacity = "0.5";
+      }
+    });
+  });
 });
