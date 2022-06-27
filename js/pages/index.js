@@ -1,2 +1,2 @@
-import "../components/agenda-maui.js";
+import "../components/agenda-days.js";
 import "../components/days-dropdown.js";

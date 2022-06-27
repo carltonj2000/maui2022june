@@ -1,1 +1,1 @@
-import "../components/events-maui.js";
+import "../components/event-items.js";

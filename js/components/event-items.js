@@ -1,7 +1,7 @@
 import { events } from "../data/events.js";
 import { enhance } from "../enhance-html.js";
 
-class EventsMaui extends HTMLElement {
+class EventItems extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = /* html */ `
@@ -38,4 +38,4 @@ class EventsMaui extends HTMLElement {
   }
 }
 
-customElements.define("events-maui", EventsMaui);
+customElements.define("event-items", EventItems);

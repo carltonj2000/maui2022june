@@ -1,6 +1,6 @@
 import { table } from "./agenda-table.js";
 
-class Agenda extends HTMLElement {
+class Day extends HTMLElement {
   constructor() {
     super();
     this._info = null;
@@ -23,4 +23,4 @@ class Agenda extends HTMLElement {
   }
 }
 
-customElements.define("agenda-day", Agenda);
+customElements.define("agenda-day", Day);

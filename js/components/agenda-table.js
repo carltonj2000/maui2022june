@@ -4,7 +4,7 @@ export const table = (agenda, title = "Title Needed") => {
   const head = agenda.slice(0, 1);
   const body = agenda.slice(1);
   const html = /* html */ `
-      <div class="agenda">
+      <div class="day">
         <h3>${title}</h3>
         <table>
           <thead>

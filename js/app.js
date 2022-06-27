@@ -5,58 +5,46 @@ import "./pages/events.js";
 
 //import "./sw-modal";
 //import "./swReg";
-const events = document.getElementById("events");
-const eventsB = document.getElementById("eventsButton");
 
-const agenda = document.getElementById("agenda");
-const agendaB = document.getElementById("agendaButton");
-
-//const todo = document.getElementById("todo");
-//const todoB = document.getElementById("todoButton");
-
-eventsB.addEventListener("click", () => {
-  events.style.display = "flex";
-  eventsB.style.opacity = "1";
-
-  agenda.style.display = "none";
-  agendaB.style.opacity = "0.5";
-
-  //  todo.style.display = "none";
-  //  todoB.style.opacity = "0.5";
-});
-
-agendaB.addEventListener("click", () => {
-  events.style.display = "none";
-  eventsB.style.opacity = "0.5";
-
-  agenda.style.display = "flex";
-  agendaB.style.opacity = "1";
-
-  //  todo.style.display = "none";
-  //  todoB.style.opacity = "0.5";
-});
-
-// todoB.addEventListener("click", () => {
-//   events.style.display = "none";
-//   eventsB.style.opacity = "0.5";
-
-//   agenda.style.display = "none";
-//   agendaB.style.opacity = "0.5";
-
-//    todo.style.display = "flex";
-//    todoB.style.opacity = "1";
-// });
-
-//eventsB.click();
-agendaB.click();
-
-// TO DO generate the above code with the map below
-["agenda", "events", "todo"].map((p) => {
-  // const
-});
-
+// calculate nav bar height for scroll padding
 const navigationHeight = document.querySelector(".header").offsetHeight;
 document.documentElement.style.setProperty(
   "--scroll-padding",
   navigationHeight + "px"
 );
+
+const events = document.getElementById("events");
+const eventsB = document.getElementById("eventsB");
+
+const days = document.getElementById("days");
+const daysB = document.getElementById("daysB");
+
+eventsB.addEventListener("click", () => {
+  events.style.display = "flex";
+  eventsB.style.opacity = "1";
+
+  days.style.display = "none";
+  daysB.style.opacity = "0.5";
+});
+
+daysB.addEventListener("click", () => {
+  events.style.display = "none";
+  eventsB.style.opacity = "0.5";
+
+  days.style.display = "flex";
+  daysB.style.opacity = "1";
+});
+
+// todo: below refactor the hard coded values above
+const tabOpts = ["days", "events"];
+
+tabGrpNBtn = tabOpts.map((t) => {
+  const grp = document.getElementById(t);
+  const btn = document.getElementById(`${t}B`);
+  return { grp, btn };
+});
+
+// add click handler to enable only one tab
+tabOpts.map((t) => {
+  //
+});
